@@ -1,14 +1,14 @@
 import { ProductData } from './types';
 
 const GITHUB = 'https://github.com/OrionArchitekton/schemafit';
-const RELEASE = 'https://github.com/OrionArchitekton/schemafit/releases/tag/v0.2.0';
+const RELEASE = 'https://github.com/OrionArchitekton/schemafit/releases/tag/v0.3.0';
 const PYPI = 'https://pypi.org/project/schemafit/';
 
 /**
  * Single source of truth for the schemafit microsite.
  *
  * All install/usage/demo content is GROUNDED in the real tool repo (README.md,
- * cli.py, pyproject.toml at v0.2.0) and the live PyPI listing (schemafit 0.2.0).
+ * cli.py, pyproject.toml at v0.3.0) and the live PyPI listing (schemafit 0.3.0).
  * The tool IS on PyPI, so the quickstart uses `pip install schemafit`. The demo
  * shows the tool's real OUTPUT FORMAT with an illustrative example schema — no
  * fabricated benchmarks or performance numbers.
@@ -16,12 +16,12 @@ const PYPI = 'https://pypi.org/project/schemafit/';
 export const PRODUCT_DATA: ProductData = {
   name: 'schemafit',
   tagline:
-    'Lint your LLM structured-output & JSON schemas against OpenAI, Anthropic, and Gemini — and fail CI before they 400 in production.',
+    'Lint your LLM structured-output & JSON schemas against OpenAI, Anthropic, Gemini, Mistral, and Cohere — and fail CI before they 400 in production.',
   credibility:
     'Open source (MIT) · Static & offline · Zero runtime dependencies · CI-enforceable.',
   canonical: 'https://schemafit.danmercede.com/',
   metaDescription:
-    'schemafit is a local-first, MIT-licensed CLI that lints a JSON Schema, structured-output spec, or tool definition against each provider’s documented constraint surface (OpenAI, Anthropic, Gemini) and fails CI before the schema 400s in production — naming the exact JSON-Pointer, keyword, and reason, with a repair pass. Static and offline: no API calls, no key.',
+    'schemafit is a local-first, MIT-licensed CLI that lints a JSON Schema, structured-output spec, or tool definition against each provider’s documented constraint surface (OpenAI, Anthropic, Gemini, Mistral, Cohere) and fails CI before the schema 400s in production — naming the exact JSON-Pointer, keyword, and reason, with a repair pass. Static and offline: no API calls, no key.',
 
   problem: {
     heading: 'The problem',
@@ -38,7 +38,7 @@ export const PRODUCT_DATA: ProductData = {
   cta: {
     primaryLabel: 'View on GitHub',
     primaryUrl: GITHUB,
-    secondaryLabel: 'Read the v0.2.0 release notes',
+    secondaryLabel: 'Read the v0.3.0 release notes',
     secondaryUrl: RELEASE,
   },
 
@@ -56,7 +56,7 @@ export const PRODUCT_DATA: ProductData = {
         title: 'Lint a schema against the providers you ship to',
         command: [
           'schemafit lint my-schema.json \\',
-          '  --provider openai,anthropic,gemini',
+          '  --provider openai,anthropic,gemini,mistral,cohere',
         ].join('\n'),
       },
       {
@@ -66,7 +66,7 @@ export const PRODUCT_DATA: ProductData = {
     ],
   },
 
-  // Command surface verified against schemafit/cli.py subparsers (v0.2.0).
+  // Command surface verified against schemafit/cli.py subparsers (v0.3.0).
   commands: [
     {
       name: 'lint',
@@ -81,7 +81,7 @@ export const PRODUCT_DATA: ProductData = {
     {
       name: 'providers',
       description:
-        'List the supported providers and the versioned rule pack backing each (OpenAI, Anthropic, Gemini).',
+        'List the supported providers and the versioned rule pack backing each (OpenAI, Anthropic, Gemini, Mistral, Cohere).',
     },
     {
       name: 'demo',
@@ -145,7 +145,7 @@ export const PRODUCT_DATA: ProductData = {
   links: [
     { label: 'GitHub repository', url: GITHUB, primary: true },
     { label: 'PyPI package', url: PYPI, primary: true },
-    { label: 'v0.2.0 release notes', url: RELEASE },
+    { label: 'v0.3.0 release notes', url: RELEASE },
     { label: 'Dan Mercede', url: 'https://www.danmercede.com' },
   ],
 
