@@ -30,4 +30,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://schemafit.danmercede.com/sitemap.xml
+Sitemap: https://www.danmercede.com/works/schemafit/sitemap.xml

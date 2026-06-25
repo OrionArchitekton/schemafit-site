@@ -19,7 +19,7 @@ export const PRODUCT_DATA: ProductData = {
     'Lint your LLM structured-output & JSON schemas against OpenAI, Anthropic, Gemini, Mistral, and Cohere — and fail CI before they 400 in production.',
   credibility:
     'Open source (MIT) · Static & offline · Zero runtime dependencies · CI-enforceable.',
-  canonical: 'https://schemafit.danmercede.com/',
+  canonical: 'https://www.danmercede.com/works/schemafit/',
   metaDescription:
     'schemafit is a local-first, MIT-licensed CLI that lints a JSON Schema, structured-output spec, or tool definition against each provider’s documented constraint surface (OpenAI, Anthropic, Gemini, Mistral, Cohere) and fails CI before the schema 400s in production — naming the exact JSON-Pointer, keyword, and reason, with a repair pass. Static and offline: no API calls, no key.',
 
