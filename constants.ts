@@ -1,14 +1,14 @@
 import { ProductData } from './types';
 
 const GITHUB = 'https://github.com/OrionArchitekton/schemafit';
-const RELEASE = 'https://github.com/OrionArchitekton/schemafit/releases/tag/v0.4.0';
+const RELEASE = 'https://github.com/OrionArchitekton/schemafit/releases/tag/v0.5.0';
 const PYPI = 'https://pypi.org/project/schemafit/';
 
 /**
  * Single source of truth for the schemafit microsite.
  *
  * All install/usage/demo content is GROUNDED in the real tool repo (README.md,
- * cli.py, pyproject.toml at v0.4.0) and the live PyPI listing (schemafit 0.4.0).
+ * cli.py, pyproject.toml at v0.5.0) and the live PyPI listing (schemafit 0.5.0).
  * The tool IS on PyPI, so the quickstart uses `pip install schemafit`. The demo
  * shows the tool's real OUTPUT FORMAT with an illustrative example schema — no
  * fabricated benchmarks or performance numbers.
@@ -38,7 +38,7 @@ export const PRODUCT_DATA: ProductData = {
   cta: {
     primaryLabel: 'View on GitHub',
     primaryUrl: GITHUB,
-    secondaryLabel: 'Read the v0.4.0 release notes',
+    secondaryLabel: 'Read the v0.5.0 release notes',
     secondaryUrl: RELEASE,
   },
 
@@ -66,7 +66,7 @@ export const PRODUCT_DATA: ProductData = {
     ],
   },
 
-  // Command surface verified against schemafit/cli.py subparsers (v0.4.0).
+  // Command surface verified against schemafit/cli.py subparsers (v0.5.0).
   commands: [
     {
       name: 'lint',
@@ -130,9 +130,9 @@ export const PRODUCT_DATA: ProductData = {
           'It makes no model calls and needs no key — easy to vendor, audit, and trust in a build pipeline. Runs from a fresh clone or a single pip install, fully offline.',
       },
       {
-        title: 'Grounded, versioned rule packs',
+        title: 'Grounded, versioned rule packs — with drift detection',
         body:
-          'Every rule is grounded in a real, cited provider issue. Provider constraints are encoded as declarative, versioned rule packs — so the lint stays honest and reviewable as provider APIs change.',
+          'Every rule is grounded in a real, cited provider issue. Provider constraints are encoded as declarative, versioned rule packs — so the lint stays honest and reviewable as provider APIs change. New in v0.5: automatic rule-pack drift detection — an opt-in --live-verify run that rejects a schema the static pack passed flags the pack as lagging the provider’s docs, so the packs stay honest as the APIs move.',
       },
       {
         title: 'CI-enforceable, with SARIF',
@@ -145,7 +145,7 @@ export const PRODUCT_DATA: ProductData = {
   links: [
     { label: 'GitHub repository', url: GITHUB, primary: true },
     { label: 'PyPI package', url: PYPI, primary: true },
-    { label: 'v0.4.0 release notes', url: RELEASE },
+    { label: 'v0.5.0 release notes', url: RELEASE },
     { label: 'Dan Mercede', url: 'https://www.danmercede.com' },
   ],
 
