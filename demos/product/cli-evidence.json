@@ -1,0 +1,47 @@
+{
+  "scope": "Recorded synthetic local demonstration; no API/model call or production mutation",
+  "commands": [
+    {
+      "command": [
+        "schemafit",
+        "lint",
+        "order.json",
+        "--provider",
+        "openai",
+        "--format",
+        "json"
+      ],
+      "exit": 1,
+      "stdout": "{\n  \"order.json\": {\n    \"openai\": {\n      \"findings\": [\n        {\n          \"auto_repair\": \"set_false\",\n          \"confirmed_by_provider\": null,\n          \"doc_url\": \"https://platform.openai.com/docs/guides/structured-outputs\",\n          \"json_pointer\": \"#\",\n          \"keyword\": \"additionalProperties\",\n          \"kind\": \"object_requires\",\n          \"node_pointer\": \"#\",\n          \"provider\": \"openai\",\n          \"reason\": \"OpenAI strict structured outputs require every object schema to set additionalProperties:false.\",\n          \"rule_id\": \"openai-additional-properties-false\",\n          \"severity\": \"error\"\n        },\n        {\n          \"auto_repair\": \"fill_required\",\n          \"confirmed_by_provider\": null,\n          \"doc_url\": \"https://platform.openai.com/docs/guides/structured-outputs\",\n          \"json_pointer\": \"#/properties/sku\",\n          \"keyword\": \"sku\",\n          \"kind\": \"object_all_properties_required\",\n          \"node_pointer\": \"#\",\n          \"provider\": \"openai\",\n          \"reason\": \"OpenAI strict structured outputs require every defined property to appear in 'required' (model optionality via a nullable union instead).\",\n          \"rule_id\": \"openai-all-properties-required\",\n          \"severity\": \"error\"\n        }\n      ],\n      \"status\": \"FAIL\"\n    }\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "schemafit",
+        "repair",
+        "order.json",
+        "--provider",
+        "openai",
+        "--out",
+        "fixed.json"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": "wrote fixed.json\nrepair: auto_fixed=2 lossy=1 manual_required=0\n"
+    },
+    {
+      "command": [
+        "schemafit",
+        "lint",
+        "fixed.json",
+        "--provider",
+        "openai",
+        "--format",
+        "json"
+      ],
+      "exit": 0,
+      "stdout": "{\n  \"fixed.json\": {\n    \"openai\": {\n      \"findings\": [],\n      \"status\": \"PASS\"\n    }\n  }\n}\n",
+      "stderr": ""
+    }
+  ]
+}
