@@ -1,13 +1,57 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:10.780
-This is schemafit, a local schema linter. This synthetic order schema fails the bundled OpenAI rule pack. The output points to two missing constraints before any model call.
+00:00:00.000 --> 00:00:02.580
+This is schemafit, a local schema
+linter.
 
 2
-00:00:12.013 --> 00:00:21.453
-Repair writes a new file and flags a lossy change. Making a property required can change what your application accepts, so review the diff instead of applying it blindly.
+00:00:03.320 --> 00:00:06.420
+This synthetic order schema fails
+the bundled OpenAI
 
 3
-00:00:21.933 --> 00:00:31.633
-The repaired schema passes the same static pack. This is a check against versioned rules, not live provider verification. The source and quickstart are linked below.
+00:00:06.420 --> 00:00:09.120
+rule pack. The output points to two
+missing
+
+4
+00:00:09.120 --> 00:00:10.780
+constraints before any model call.
+
+5
+00:00:12.013 --> 00:00:14.353
+Repair writes a new file and flags a
+
+6
+00:00:14.353 --> 00:00:17.493
+lossy change. Making a property
+required can change
+
+7
+00:00:17.493 --> 00:00:19.893
+what your application accepts, so
+review the diff
+
+8
+00:00:19.893 --> 00:00:21.453
+instead of applying it blindly.
+
+9
+00:00:21.933 --> 00:00:24.813
+The repaired schema passes the same
+static pack.
+
+10
+00:00:25.333 --> 00:00:27.833
+This is a check against versioned
+rules, not
+
+11
+00:00:27.833 --> 00:00:31.133
+live provider verification. The
+source and quickstart are
+
+12
+00:00:31.133 --> 00:00:31.633
+linked below.

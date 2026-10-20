@@ -1,0 +1,65 @@
+{
+  "source": "Existing per-shot word alignment from this exact recording; original narration retained. Numeric spelling uses the same observed spoken interval.",
+  "cues": [
+    {
+      "start": 0.0,
+      "end": 2.58,
+      "text": "This is schemafit, a local schema linter."
+    },
+    {
+      "start": 3.32,
+      "end": 6.42,
+      "text": "This synthetic order schema fails the bundled OpenAI"
+    },
+    {
+      "start": 6.42,
+      "end": 9.12,
+      "text": "rule pack. The output points to two missing"
+    },
+    {
+      "start": 9.12,
+      "end": 10.78,
+      "text": "constraints before any model call."
+    },
+    {
+      "start": 12.013333000000001,
+      "end": 14.353333000000001,
+      "text": "Repair writes a new file and flags a"
+    },
+    {
+      "start": 14.353333000000001,
+      "end": 17.493333,
+      "text": "lossy change. Making a property required can change"
+    },
+    {
+      "start": 17.493333,
+      "end": 19.893333,
+      "text": "what your application accepts, so review the diff"
+    },
+    {
+      "start": 19.893333,
+      "end": 21.453333,
+      "text": "instead of applying it blindly."
+    },
+    {
+      "start": 21.933333,
+      "end": 24.813333,
+      "text": "The repaired schema passes the same static pack."
+    },
+    {
+      "start": 25.333333,
+      "end": 27.833333000000003,
+      "text": "This is a check against versioned rules, not"
+    },
+    {
+      "start": 27.833333000000003,
+      "end": 31.133333,
+      "text": "live provider verification. The source and quickstart are"
+    },
+    {
+      "start": 31.133333,
+      "end": 31.633333,
+      "text": "linked below."
+    }
+  ]
+}
